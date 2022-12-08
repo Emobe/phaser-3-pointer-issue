@@ -1,0 +1,59 @@
+{ "compressionlevel":-1,
+ "height":10,
+ "infinite":false,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 2, 2, 2, 0, 0, 0,
+            0, 0, 0, 2, 2, 2, 0, 0, 0, 0,
+            0, 0, 0, 2, 1, 1, 2, 2, 0, 0,
+            0, 0, 0, 2, 1, 1, 2, 0, 0, 0,
+            0, 0, 0, 2, 1, 1, 2, 0, 0, 0,
+            0, 0, 0, 2, 2, 2, 2, 0, 0, 0,
+            0, 0, 0, 0, 2, 2, 0, 0, 0, 0,
+            0, 0, 0, 0, 2, 0, 0, 0, 0, 0],
+         "height":10,
+         "id":1,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":2,
+ "nextobjectid":1,
+ "orientation":"staggered",
+ "renderorder":"left-down",
+ "staggeraxis":"y",
+ "staggerindex":"odd",
+ "tiledversion":"1.9.2",
+ "tileheight":32,
+ "tilesets":[
+        {
+         "columns":10,
+         "firstgid":1,
+         "grid":
+            {
+             "height":64,
+             "orientation":"isometric",
+             "width":64
+            },
+         "image":"..\/graphics\/tileset\/Tileset.png",
+         "imageheight":320,
+         "imagewidth":640,
+         "margin":0,
+         "name":"Tileset",
+         "spacing":0,
+         "tilecount":100,
+         "tileheight":64,
+         "tilewidth":64
+        }
+        ],
+ "tilewidth":64,
+ "type":"map",
+ "version":"1.9",
+ "width":10
+}
