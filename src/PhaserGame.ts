@@ -2,6 +2,7 @@ import Phaser from "phaser";
 
 import HelloWorldScene from "./scenes/HelloWorldScene";
 import WorldScene from "./scenes/WorldScene";
+import DebugScene from "./scenes/DebugScene";
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
@@ -18,7 +19,7 @@ const config: Phaser.Types.Core.GameConfig = {
       gravity: { y: 200 },
     },
   },
-  scene: [WorldScene],
+  scene: [WorldScene, DebugScene],
 };
 
 export default new Phaser.Game(config);

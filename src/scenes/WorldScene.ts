@@ -1,7 +1,8 @@
-import Phaser from "phaser";
+import Phaser, { Input } from "phaser";
 import characterSprite from "../assets/graphics/spritesheets/char1.png";
 import tileSet from "../assets/graphics/tileset/Tileset.png";
 import MapJson from "../assets/maps/main.json";
+import DebugScene from "./DebugScene";
 
 export default class WorldScene extends Phaser.Scene {
   constructor() {
@@ -17,17 +18,16 @@ export default class WorldScene extends Phaser.Scene {
   setupPlayer() {
     const character = this.add.sprite(200, 200, "char").setInteractive();
 
-    character.anims.play("walk");
-
     this.anims.create({
       key: "walk",
       frames: this.anims.generateFrameNumbers("char", { start: 0, end: 8 }),
       frameRate: 30,
       repeat: -1,
     });
+
+    character.anims.play("walk");
     character.on("pointerdown", (pointer) => {
-      console.log("dfgfd");
-      console.log(pointer);
+      //console.log(pointer);
     });
   }
 
@@ -47,9 +47,12 @@ export default class WorldScene extends Phaser.Scene {
   }
 
   create() {
+    this.scene.launch("Debug");
     this.setupMap();
     this.setupPlayer();
   }
+
+  update() {}
 
   render() {}
 }
